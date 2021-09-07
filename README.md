@@ -1,4 +1,4 @@
-Near-Todo-DApp
+Todo List - Near DApp
 ==================
 
 The small tool to create Todo List on Near protocol.
