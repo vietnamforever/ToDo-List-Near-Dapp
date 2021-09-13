@@ -4,6 +4,8 @@ Todo List - Near DApp
 The small tool to create Todo List on Near protocol.
 <br />Demo: http://huuthang.tech:1234/
 
+<br />Slide: https://github.com/vietnamforever/ToDo-List-Near-Dapp/blob/main/docs/Todo%20List%20Near%20Dapp.ppt
+
 Quick Start
 ===========
 
