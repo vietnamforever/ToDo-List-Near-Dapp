@@ -1,24 +1,11 @@
 import { Context, PersistentVector, logging, storage, env } from 'near-sdk-as'
 import { Task, tasks } from './model';
 
-const DEFAULT_MESSAGE = 'Hello'
-
 /**
- * Get task from index
- * @param index Index of task 
- * @returns Return a task or null
+ * Get task from id of author
+ * @param _accountID ID of the author
+ * @returns Return a task or empty array
  */
- export function getTask(tskId: i32): Task | null {
-  // Checking msgIndex
-  let index = tskId - 1;
-  if (index<0 || index>=tasks.length) {
-      // Invalid input
-      return null
-  };
-
-  // Return tasks
-  return tasks[index];
-}
 
 export function getTasksByAccountId(_accountId: String) : Task[] {
   let results = new Array<Task>();
@@ -30,12 +17,6 @@ export function getTasksByAccountId(_accountId: String) : Task[] {
     }
   }
   return results;
-}
-
-export function getAllTasks() : void {
-
-  logging.log(tasks);
-
 }
 
 /**
